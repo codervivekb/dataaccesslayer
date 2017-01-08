@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
 @Entity
 public class Process {
 	
@@ -17,8 +18,9 @@ public class Process {
 		// TODO Auto-generated constructor stub
 	}
     
-     public Process(String name) {
+     public Process(Long id, String name) {
     	 this.name = name;
+    	 this.id = id;
      }
     
     public Long getId() {
